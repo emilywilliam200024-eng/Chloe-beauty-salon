@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chloe’s Beauty Salon - Premium Hair Care Products for USA. Hair sprays, gels, styling clays, edge control, bonnets, hair growth oils & more. Shop now for healthy, styled hair.">
+    <title>Chloe’s Beauty Salon | Premium Hair Care Products - USA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap');
+        
+        :root {
+            --primary: #9F7AEA;
+            --dark: #1F2937;
+            --light: #F8FAFC;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--light);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6B46C1, #9F7AEA);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/1920/800') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(159, 122, 234, 0.2);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+        
+        .price {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 12px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #7C3AED;
+            transform: scale(1.05);
+        }
+        
+        .category {
+            background: #F0E8FF;
+            padding: 60px 0;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: #CBD5E0;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links a { margin-left: 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Chloe’s Beauty</div>
+                <div class="nav-links">
+                    <a href="#shop">Shop</a>
+                    <a href="#about">About</a>
+                    <a href="#blog">Hair Tips</a>
+                    <a href="#">Contact</a>
+                    <a href="#" style="background:rgba(255,255,255,0.2); padding:8px 18px; border-radius:30px;">Cart (0)</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Chloe’s Beauty Salon</h1>
+            <p style="font-size:1.4rem; margin-bottom:2rem;">Premium Hair Care Delivered Across the USA</p>
+            <a href="#shop" class="btn" style="font-size:1.2rem; padding:16px 40px;">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="shop" class="section">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.8rem; margin-bottom:20px;">Our Signature Collections</h2>
+            <p style="text-align:center; max-width:700px; margin:0 auto 50px; color:#555;">
+                Professional-grade hair sprays, gels, styling clays, edge control, bonnets, growth oils & more. 
+                Formulated for beautiful, healthy hair that lasts.
+            </p>
+
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/1015/600/400" alt="Hair Spray">
+                    <div class="product-info">
+                        <h3>Chloe’s Hold Firm Hair Spray</h3>
+                        <p>Strong yet flexible hold. Humidity-resistant formula. 8oz</p>
+                        <div class="price">$18.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/201/600/400" alt="Styling Gel">
+                    <div class="product-info">
+                        <h3>Ultra Shine Styling Gel</h3>
+                        <p>Non-flaky, high-definition curls & waves. Alcohol-free.</p>
+                        <div class="price">$14.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/237/600/400" alt="Styling Clay">
+                    <div class="product-info">
+                        <h3>Matte Finish Styling Clay</h3>
+                        <p>Reworkable texture for effortless styles. For all hair types.</p>
+                        <div class="price">$22.50</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/180/600/400" alt="Edge Control">
+                    <div class="product-info">
+                        <h3>Extra Strength Edge Control</h3>
+                        <p>24-hour sleek edges. Non-greasy, flake-free formula.</p>
+                        <div class="price">$12.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/251/600/400" alt="Edge Brush">
+                    <div class="product-info">
+                        <h3>Precision Edge Control Brush Set</h3>
+                        <p>3-piece professional edge brushes + spoolie.</p>
+                        <div class="price">$15.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/866/600/400" alt="Bonnet">
+                    <div class="product-info">
+                        <h3>Luxury Silk Bonnet</h3>
+                        <p>Reversible satin + silk. Protects curls & extensions overnight.</p>
+                        <div class="price">$19.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/669/600/400" alt="Hair Growth Oil">
+                    <div class="product-info">
+                        <h3>Chloe’s Rapid Growth Oil</h3>
+                        <p>Blend of Jamaican Black Castor Oil, Rosemary & Peppermint.</p>
+                        <div class="price">$24.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/870/600/400" alt="Castor Oil">
+                    <div class="product-info">
+                        <h3>Pure Jamaican Black Castor Oil</h3>
+                        <p>Cold-pressed. Promotes thickness & length.</p>
+                        <div class="price">$16.50</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/1016/600/400" alt="Aloe Vera Mist">
+                    <div class="product-info">
+                        <h3>Soothing Aloe Vera Hair Mist</h3>
+                        <p>Hydrating leave-in with rosewater & essential oils.</p>
+                        <div class="price">$13.99</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY HIGHLIGHTS -->
+    <section class="category">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:50px;">Why Shop With Chloe’s?</h2>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:40px; text-align:center;">
+                <div>
+                    <h3>🌿 Clean Ingredients</h3>
+                    <p>Sulfate-free, paraben-free, cruelty-free formulas loved across the USA.</p>
+                </div>
+                <div>
+                    <h3>🚚 Fast USA Shipping</h3>
+                    <p>2-5 business days to most states. Free shipping on orders over $75.</p>
+                </div>
+                <div>
+                    <h3>💇‍♀️ Salon Quality at Home</h3>
+                    <p>Products used daily in Chloe’s Beauty Salon now available online.</p>
+                </div>
+            </div>
+       ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
